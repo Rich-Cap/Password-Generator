@@ -1,0 +1,48 @@
+body{
+	background-color: rgb(249, 250, 255);
+}
+h1{
+	padding: 20px;
+}
+.card{
+	padding: 10px 25px;
+}
+.card-header{
+	background-color: white;
+	padding-top: 40px;
+	padding-left: 0px;
+	text-align: left;
+}
+.card-footer{
+	background-color: white;
+	padding-bottom: 40px;
+}
+.card-body{
+	padding: 0px;
+	margin: 15px 0px;
+}
+.form-group{
+	margin-bottom: 0px;
+}
+.form{
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	border-radius: 5px;
+	border-style: dashed;
+	border-color: lightgray;
+	;
+}
+.btn{
+	background-color: rgb(201, 15, 15);
+	border-radius: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.btn:hover{
+	background-color: rgb(241, 20, 20);
+}
+.btn:active{
+	background-color: rgb(255, 153, 0);
+}

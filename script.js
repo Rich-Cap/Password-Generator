@@ -8,5 +8,4 @@ function writePassword() {
 
 }
 
-
 generateBtn.addEventListener("click", writePassword);

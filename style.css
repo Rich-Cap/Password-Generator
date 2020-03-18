@@ -15,14 +15,14 @@ h1{
 }
 .card-footer{
 	background-color: white;
-	padding-bottom: 40px;
+	padding: 25px;
 }
 .card-body{
 	padding: 0px;
 	margin: 15px 0px;
 }
 .form-group{
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 }
 .form{
 	width: 100%;
@@ -33,6 +33,12 @@ h1{
 	border-style: dashed;
 	border-color: lightgray;
 	;
+}
+.checkboxes{
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: left;
+	text-align: left;
 }
 .btn{
 	background-color: rgb(201, 15, 15);

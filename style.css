@@ -1,20 +1,25 @@
 body{
-	background-color: rgb(249, 250, 255);
+	background-image: url(https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
 }
 h1{
 	padding: 20px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.986);
+	font-weight: bold;
 }
 .card{
 	padding: 10px 25px;
+	background-color: rgb(255, 255, 255);
 }
 .card-header{
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 	padding-top: 40px;
 	padding-left: 0px;
 	text-align: left;
+	color: darkslategrey;
 }
 .card-footer{
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 	padding: 25px;
 }
 .card-body{
@@ -31,8 +36,7 @@ h1{
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	border-radius: 5px;
 	border-style: dashed;
-	border-color: lightgray;
-	;
+	background-color: ghostwhite;
 }
 .checkboxes{
 	display: grid;

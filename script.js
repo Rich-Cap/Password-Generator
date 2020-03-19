@@ -1,3 +1,15 @@
+var characterAmountNumber = document.getElementById("characterAmountNumber");
+var characterAmountRange = document.getElementById("characterAmountRange");
+
+characterAmountRange.addEventListener("input", syncCharacterAmount);
+characterAmountNumber.addEventListener("input", syncCharacterAmount);
+
+function syncCharacterAmount(i) {
+	var value = i.target.value;
+	characterAmountNumber.value = value;
+	characterAmountRange.value = value;
+}
+
 
 
 

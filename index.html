@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
@@ -24,9 +25,8 @@
 					</div>
 					<div class="card-body">
 						<div class="form-group">
-							<textarea class="form" rows="4" placeholder="Your Secure Password" readonly></textarea>
+							<textarea id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
 						</div>
-					
 						<div class="form-group">
 						<label for="formControlRange">Number of Characters </label>
 						<input type="number" id="characterAmountNumber" min="8" max="128" value="64">
@@ -41,26 +41,26 @@
 							</div>
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-								<label class="form-check-label" for="defaultCheck1">
+								<label class="form-check-label" for="defaultCheck2">
 								Include UPPERCASE
 								</label>
 							</div>
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-								<label class="form-check-label" for="defaultCheck1">
+								<label class="form-check-label" for="defaultCheck3">
 								Include Numbers
 								</label>
 							</div>
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-								<label class="form-check-label" for="defaultCheck1">
+								<label class="form-check-label" for="defaultCheck4">
 								Include Specials Characters
 								</label>
 							</div>
 						</div>
 					</div>
 					<div class="card-footer">
-						<button type="button" class="btn btn-lg">Generate Password</button>
+						<button id="generate" class="btn btn-lg">Generate Password</button>
 					</div>
 				</div>
 			</div>

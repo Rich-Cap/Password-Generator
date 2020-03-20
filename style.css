@@ -9,17 +9,17 @@ h1{
 }
 .card{
 	padding: 10px 25px;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(243, 243, 243);
 }
 .card-header{
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(243, 243, 243);
 	padding-top: 40px;
 	padding-left: 0px;
 	text-align: left;
 	color: darkslategrey;
 }
 .card-footer{
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(243, 243, 243);
 	padding: 25px;
 }
 .card-body{
@@ -29,7 +29,7 @@ h1{
 .form-group{
 	margin-bottom: 10px;
 }
-.form{
+#password{
 	width: 100%;
 	text-align: center;
 	padding: 10px;

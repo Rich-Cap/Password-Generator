@@ -14,15 +14,13 @@ function writePassword(){
 	passwordText.value = password;
 }
 
-	
-
 }
 
 generateBtn.addEventListener("click", writePassword);
 
 
 
-// 
+// Page elements functionality
 var characterAmountNumber = document.getElementById("characterAmountNumber");
 var characterAmountRange = document.getElementById("characterAmountRange");
 

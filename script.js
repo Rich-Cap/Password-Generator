@@ -2,13 +2,27 @@ var generateBtn = document.querySelector("#generate");
 
 function writePassword(){
 	alert("Please select criteria to generate a password");
-	var number = prompt("Type a number to choose length of password. Must be between 8 to 128 characters.");
-	if (number >= 8 && number <= 128){
-		prompt("Type 'yes' to include lowercase or press cancel.")
-	} else prompt("Type 'yes' to include UPPERCASE or press cancel.");
-	// prompt("Type 'yes' to include UPPERCASE or press cancel.");
-	// prompt("Type 'yes' to include Numbers or press cancel.");
-	// prompt("Type 'yes' to include Special Characters or press cancel.");
+	var length = prompt("Type a number to choose length of password. Must be between 8 to 128 characters.");
+	var lower = prompt("Type 'yes' to include lowercase or press cancel.");
+// 	var upper = prompt("Type 'yes' to include UPPERCASE or press cancel.");
+// 	var number = prompt("Type 'yes' to include Numbers or press cancel.");
+// 	var symbol = prompt("Type 'yes' to include Special Characters or press cancel.");
+
+
+// 	function randomLower(){
+// 		return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+// 	}
+// 	function randomUpper(){
+// 		return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+// 	}
+// 	function randomNumber(){
+// 		return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+// 	}
+// 	function randomSymbol(){
+// 		var symbols = "!#$%&'*+,-./:;<=>?@\^_`|~"
+// 		return symbols[Math.floor(Math.random() * symbols.length];
+// 	}
+	
 	{
 	var password = generatePassword();
 	var passwordText = document.querySelector("#password");
@@ -18,32 +32,22 @@ function writePassword(){
 
 }
 
+
+function randomLower(){
+	return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
+function randomUpper(){
+	return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
+function randomNumber(){
+	return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+}
+function randomSymbol(){
+	var symbols = "!#$%&'*+,-./:;<=>?@\^_`|~"
+	return symbols[Math.floor(Math.random() * symbols.length)];
+}
+
 generateBtn.addEventListener("click", writePassword);
-
-// for (password !== null) {
-// 	// Prompt user to input a letter
-// 	letter = prompt("Type 'h' to honk, 'd' to drive to work, 'w' to drive around the world, or 't' to get a tuneup.");
-
-// 	// If the letter is h, run the following functions/methods.
-// 	if (letter === "h") {
-// 	  car.honk();
-// 	  reWriteStats();
-// 	}
-// 	// If the letter is d, run the following functions/methods.
-// 	else if (letter === "d" && car.isWorking) {
-// 	  car.driveToWork();
-// 	  reWriteStats();
-// 	}
-// 	// If the letter is w, run the following functions/methods.
-// 	else if (letter === "w" && car.isWorking) {
-// 	  car.driveAroundWorld();
-// 	  reWriteStats();
-// 	}
-// 	// If the letter is t, run the following functions/methods.
-// 	else if (letter === "t") {
-// 	  car.getTuneUp();
-// 	  reWriteStats();
-// 	}
 
 
 // Page elements functionality

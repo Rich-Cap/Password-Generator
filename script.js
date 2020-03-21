@@ -33,7 +33,7 @@ function writePassword(){
         for ( var i = 0; i < length; i++ ) {
         result += characters.charAt(Math.floor(Math.random() * charactersLength));
         }
-        return result;
+		return result;
 	}
 	
 	var password = makeid(length);
@@ -46,14 +46,14 @@ generateBtn.addEventListener("click", writePassword);
 
 //** Page elements functionality - Stopped to redirect purpose of HW assignment */
 
-// var characterAmountNumber = document.getElementById("characterAmountNumber");
-// var characterAmountRange = document.getElementById("characterAmountRange");
+var characterAmountNumber = document.getElementById("characterAmountNumber");
+var characterAmountRange = document.getElementById("characterAmountRange");
 
-// characterAmountRange.addEventListener("input", syncCharacterAmount);
-// characterAmountNumber.addEventListener("input", syncCharacterAmount);
+characterAmountRange.addEventListener("input", syncCharacterAmount);
+characterAmountNumber.addEventListener("input", syncCharacterAmount);
 
-// function syncCharacterAmount(i) {
-// 	var value = i.target.value;
-// 	characterAmountNumber.value = value;
-// 	characterAmountRange.value = value;
-// }
+function syncCharacterAmount(i) {
+	var value = i.target.value;
+	characterAmountNumber.value = value;
+	characterAmountRange.value = value;
+}

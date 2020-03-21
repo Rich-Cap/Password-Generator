@@ -14,24 +14,21 @@ function writePassword(){
 	}else alert("Invalid answer. Try again!");
 	
 	if (getLower === true){
-		var getLower = lower;
-	}
+		var lower = "abcdefghijklmnopqrstuvwxyz";
+	} else lower = ""
 	if (getUpper === true){
-		var getUpper = upper;
-	}
+		var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	} else upper = ""
 	if (getNumber === true){
-		var getNumber = number;
-	}
+		var numbers = "0123456789";
+	} else numbers = ""
 	if (getSymbol === true){
-		var getSymbol = symbol;
-	}
+		var symbol = "!*+,-./:;<=>?{@_`|}~";
+	} else symbol = ""
 
 	function makeid(length){
 		var result           = "";
-        var lower            = "abcdefghijklmnopqrstuvwxyz";
-        var upper            = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        var numbers          = "0123456789";
-        var characters       = lower+upper+numbers;
+        var characters       = lower + upper + numbers + symbol;
         var charactersLength = characters.length;
         for ( var i = 0; i < length; i++ ) {
         result += characters.charAt(Math.floor(Math.random() * charactersLength));
